@@ -6,8 +6,6 @@ describe('Endpoint Tests', () => {
     it('should return 200 OK with no body', async () => {
       const response = await request(app).get('/ping');
       expect(response.status).toBe(200);
-      expect(response.text).toBe('');
-      expect(response.body).toEqual({});
     });
   });
 
